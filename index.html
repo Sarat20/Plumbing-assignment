@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+    .card:hover img {
+      animation: spin 0.5s linear;
+    }
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    a {
+      font-family: 'Oswald', sans-serif;
+      font-size: 24px;
+    }
+
+    #assignment {
+      background: linear-gradient(to right bottom, #6B21A8 50%, #ffffff 50%);
+    }
+
+    .icon-circle {
+      position: absolute;
+      top: -40px; 
+      left: 50%;
+      transform: translateX(-50%);
+      border: 4px solid #6B21A8; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .icon-circle svg {
+      transition: transform 1s ease-in-out;
+    }
+    .title {
+      font-family: 'Oswald', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div id="assignment" class="pt-4 h-[500px] my-10">
+    <div class="max-w-7xl mx-auto px-2">
+      <div class="text-left text-white text-5xl mb-16 title">OUR SERVICES</div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="card bg-white rounded-lg shadow-lg p-8 text-center relative hover:scale-105 transition-all duration-300">
+          <div class="w-24 h-24 rounded-full bg-white icon-circle">
+            <img class="h-22 rounded-full" src="emergency-card-icon.jpg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold mt-7 mb-2">Emergency Plumbing Services</h3>
+          <p class="text-gray-700 mb-4">Our plumbers are ready to go 24/7 for emergencies - including nights, weekends, and holidays.</p>
+          <a href="#" class="text-purple-700">Explore This Service ></a>
+        </div>
+        <div class="card bg-white rounded-lg shadow-lg p-8 text-center relative hover:scale-105 transition-all duration-300">
+          <div class="w-24 h-24 rounded-full bg-white icon-circle">
+            <img class="h-22 rounded-full" src="plumbing.png" alt="">
+          </div>
+          <h3 class="text-xl font-semibold mt-7 mb-2">Plumbing and Drains</h3>
+          <p class="text-gray-700 mb-4">As the largest plumbing and drain service company, we make thousands of repairs every day.</p>
+          <a href="#" class="text-purple-700">Explore This Service &gt;</a>
+        </div>
+        <div class="card bg-white rounded-lg shadow-lg p-8 text-center relative hover:scale-105 transition-all duration-300">  
+          <div class="w-24 h-24 rounded-full bg-white icon-circle">
+            <img class="h-20 rounded-full" src="waterdrop.png" alt="">
+          </div>
+          <h3 class="text-xl font-semibold mt-7 mb-2">Water Damage</h3>
+          <p class="text-gray-700 mb-4">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+          <a href="#" class="text-purple-700 ">Explore This Service &gt;</a>
+        </div>
+        <div class="card bg-white rounded-lg shadow-lg p-8 text-center relative hover:scale-105 transition-all duration-300">
+          <div class="w-24 h-24 rounded-full bg-white icon-circle">
+           <img src="heater.jpg" class="h-20 rounded-full" alt="">
+          </div>
+          <h3 class="text-xl font-semibold mt-7 mb-2">Water Heaters</h3>
+          <p class="text-gray-700 mb-4">Trust Roto-Rooter for repair and replacement of gas, electric, and tankless water heaters.</p>
+          <a href="#" class="text-purple-700 ">Explore This Service &gt;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
